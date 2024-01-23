@@ -7,23 +7,24 @@ import { UserFormComponent } from './components/user-form/user-form.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatSelectModule} from '@angular/material/select';
-
-
-
-
-
+import { MatButtonModule} from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UsersFormComponent } from './components/users-form/users-form.component';
 
 @NgModule({
   declarations: [
     UsersComponent,
-    UserFormComponent
+    UserFormComponent,
+    UsersFormComponent
   ],
   imports: [
     CommonModule,
-    MatTableModule,
     MatFormFieldModule,
+    MatTableModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   exports: [
     UsersComponent
