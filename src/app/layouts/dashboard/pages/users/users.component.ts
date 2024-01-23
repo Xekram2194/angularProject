@@ -29,4 +29,8 @@ export class UsersComponent {
       role: 'USER'
     }
   ];
+
+  onUserSubmited(ev: User): void{
+    this.dataSource.push(ev);
+  }
 }
